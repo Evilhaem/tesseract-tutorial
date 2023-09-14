@@ -57,7 +57,7 @@ sudo apt-get install libtesseract-dev
 Now install other libraries required to train. 
  ```bash
 sudo apt-get install libicu-dev libpango1.0-dev libcairo2-dev
-sudo apt-get install make bc
+sudo apt-get install make bc automake libtools
 ```
 
 Leptonica is required as well, but you're going to build it.
@@ -68,8 +68,13 @@ make leptonica tesseract
 make tesseract-langdata
 ```
 
-
-
+ ```bash
+autoconf
+./configure
+make
+make training
+sudo make training-install
+```
 
 ## Installing font
 
