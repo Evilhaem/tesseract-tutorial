@@ -56,7 +56,7 @@ sudo apt-get install libtesseract-dev
  
 Now install other libraries required to train. 
  ```bash
-sudo apt-get install libicu-dev libpango1.0-dev libcairo2-dev make bc automake libtool
+sudo apt-get install libicu-dev libpango1.0-dev libcairo2-dev make bc automake libtool unzip
 ```
 
 Leptonica is required as well, but you're going to build it.
